@@ -1,7 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/quick-view/src",
-  "prefix": "lcmp",
+  "prefix": "quick",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -63,7 +63,10 @@
           "browserTarget": "quick-view:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/quick-view/proxy.conf.json"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
