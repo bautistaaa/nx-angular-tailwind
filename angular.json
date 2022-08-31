@@ -5,6 +5,7 @@
     "core-ui": "libs/core-ui",
     "quick-view": "apps/quick-view",
     "quick-view-bff": "apps/quick-view-bff",
-    "quick-view-e2e": "apps/quick-view-e2e"
+    "quick-view-e2e": "apps/quick-view-e2e",
+    "quick-view-quick-view-lib": "libs/quick-view/quick-view-lib"
   }
 }

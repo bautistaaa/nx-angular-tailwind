@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@lcmp/core-ui": ["libs/core-ui/src/index.ts"]
+      "@lcmp/core-ui": ["libs/core-ui/src/index.ts"],
+      "@lcmp/quick-view/quick-view-lib": [
+        "libs/quick-view/quick-view-lib/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
