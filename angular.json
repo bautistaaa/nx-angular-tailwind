@@ -6,6 +6,6 @@
     "quick-view": "apps/quick-view",
     "quick-view-bff": "apps/quick-view-bff",
     "quick-view-e2e": "apps/quick-view-e2e",
-    "quick-view-quick-view-lib": "libs/quick-view/quick-view-lib"
+    "quick-view-lib-quick-view": "libs/quick-view/lib-quick-view"
   }
 }

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
+import { CoreUiModule } from '@lcmp/core-ui';
+import { QuickViewLibModule } from '@lcmp/quick-view/lib-quick-view';
 
 import { AppComponent } from './app.component';
-import { CoreUiModule } from '@lcmp/core-ui';
-import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
   // { path: 'starter', component: StarterComponent },
@@ -11,7 +12,12 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, CoreUiModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    CoreUiModule,
+    QuickViewLibModule,
+    RouterModule.forRoot(appRoutes),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

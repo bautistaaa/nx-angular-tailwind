@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'quick-view-quick-view-lib',
+  displayName: 'quick-view-lib-quick-view',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/quick-view/quick-view-lib',
+  coverageDirectory: '../../../coverage/libs/quick-view/lib-quick-view',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

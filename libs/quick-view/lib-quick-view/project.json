@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/quick-view/lib-quick-view/src",
+  "prefix": "quick-view",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/quick-view/lib-quick-view"],
+      "options": {
+        "jestConfig": "libs/quick-view/lib-quick-view/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/quick-view/lib-quick-view/**/*.ts",
+          "libs/quick-view/lib-quick-view/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

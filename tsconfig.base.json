@@ -16,8 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@lcmp/core-ui": ["libs/core-ui/src/index.ts"],
-      "@lcmp/quick-view/quick-view-lib": [
-        "libs/quick-view/quick-view-lib/src/index.ts"
+      "@lcmp/quick-view/lib-quick-view": [
+        "libs/quick-view/lib-quick-view/src/index.ts"
       ]
     }
   },
