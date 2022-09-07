@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'lcmp-root',
-  templateUrl: './app.component.html',
+  selector: 'quick-view-intro',
+  templateUrl: './intro.component.html'
 })
-export class AppComponent {
+export class IntroComponent {
   constructor(private router: Router) {}
 
   navigate() {
-    this.router.navigateByUrl('/starter')
+    this.router.navigateByUrl('/starter');
   }
 }

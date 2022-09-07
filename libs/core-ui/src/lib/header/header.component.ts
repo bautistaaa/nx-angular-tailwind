@@ -7,7 +7,7 @@ import { Component, OnInit, Renderer2, ViewEncapsulation } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   items = [
-    { name: 'Dashboard', href: '#', current: true },
+    { name: 'Dashboard', href: 'dashboard', current: true },
     { name: 'Team', href: '#', current: false },
     { name: 'Projects', href: '#', current: false },
     { name: 'Calendar', href: '#', current: false },
