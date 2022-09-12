@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'core-ui-banner',
   templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.scss'],
 })
-export class BannerComponent implements OnInit {
-  constructor() {}
+export class BannerComponent {
+  open = true;
 
-  ngOnInit(): void {}
+  onClose() {
+    this.open = false;
+  }
 }

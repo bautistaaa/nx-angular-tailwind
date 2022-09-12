@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "core-ui": "libs/core-ui",
+    "program-view": "apps/program-view",
+    "program-view-e2e": "apps/program-view-e2e",
     "quick-view": "apps/quick-view",
     "quick-view-bff": "apps/quick-view-bff",
     "quick-view-e2e": "apps/quick-view-e2e",

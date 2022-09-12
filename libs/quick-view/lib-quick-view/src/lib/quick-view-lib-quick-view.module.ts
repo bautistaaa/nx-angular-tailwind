@@ -8,9 +8,10 @@ import { StarterComponent } from './starter/starter.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatsBarComponent } from './stats-bar/stats-bar.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
-  imports: [CommonModule, CoreUiModule, RouterModule],
+  imports: [CommonModule, CoreUiModule, NgxChartsModule, RouterModule],
   declarations: [
     StarterComponent,
     IntroComponent,

@@ -60,4 +60,9 @@
       </button>
     </div>
   </div>
+  <div *ngIf="showSpotlight">
+    <core-ui-spotlight
+      (closeEvent)="enableSpotlight($event)"
+    ></core-ui-spotlight>
+  </div>
 </div>
