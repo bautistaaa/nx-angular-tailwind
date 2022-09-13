@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/program-view/lib-program-view/src",
+  "prefix": "program-view",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/program-view/lib-program-view"],
+      "options": {
+        "jestConfig": "libs/program-view/lib-program-view/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/program-view/lib-program-view/**/*.ts",
+          "libs/program-view/lib-program-view/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

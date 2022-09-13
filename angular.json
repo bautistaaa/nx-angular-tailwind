@@ -5,6 +5,7 @@
     "core-ui": "libs/core-ui",
     "program-view": "apps/program-view",
     "program-view-e2e": "apps/program-view-e2e",
+    "program-view-lib-program-view": "libs/program-view/lib-program-view",
     "quick-view": "apps/quick-view",
     "quick-view-bff": "apps/quick-view-bff",
     "quick-view-e2e": "apps/quick-view-e2e",

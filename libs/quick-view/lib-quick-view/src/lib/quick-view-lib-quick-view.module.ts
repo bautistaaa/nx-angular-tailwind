@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CoreUiModule } from '@lcmp/core-ui';
@@ -11,7 +12,13 @@ import { StatsBarComponent } from './stats-bar/stats-bar.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
-  imports: [CommonModule, CoreUiModule, NgxChartsModule, RouterModule],
+  imports: [
+    NoopAnimationsModule,
+    CommonModule,
+    CoreUiModule,
+    NgxChartsModule,
+    RouterModule,
+  ],
   declarations: [
     StarterComponent,
     IntroComponent,

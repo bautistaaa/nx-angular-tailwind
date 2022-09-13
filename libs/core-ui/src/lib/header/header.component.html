@@ -1,4 +1,4 @@
-<nav class="bg-gray-800">
+<nav class="bg-gray-200 dark:bg-gray-800">
   <div class="mx-auto px-2 sm:px-6 lg:px-2">
     <div class="relative flex items-center justify-between h-16">
       <div
@@ -22,8 +22,11 @@
           <div class="flex space-x-4">
             <a
               *ngFor="let item of items"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              [ngClass]="{ 'bg-gray-900 text-white': item.current }"
+              class="text-gray-700 hover:bg-gray-400 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              [ngClass]="{
+                'bg-gray-300 text-black dark:bg-gray-900 dark:text-white':
+                  item.current
+              }"
               routerLink="dashboard"
             >
               {{ item.name }}
@@ -39,7 +42,7 @@
         >
           <svg
             class="w-5 h-5"
-            [ngClass]="{ 'hidden': !isDark }"
+            [ngClass]="{ hidden: !isDark }"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +54,7 @@
           <svg
             id="theme-toggle-light-icon"
             class="w-5 h-5"
-            [ngClass]="{ 'hidden': isDark }"
+            [ngClass]="{ hidden: isDark }"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
