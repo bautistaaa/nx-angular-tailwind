@@ -1,13 +1,15 @@
-import { getGreeting } from '../support/app.po';
-
 describe('quick-view', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
+    cy.get('h1').contains('Welcome to Program Quick View');
+  });
 
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome quick-view');
+  it('should toggle spotlight when cmd + k is pressed and be dismissed on escape', () => {
+    cy.get('body').trigger('keydown', { key: 'Meta' });
+    cy.get('body').trigger('keydown', { key: 'k' });
+    cy.get('[data-cy="spotlight"]').should('be.visible');
+    cy.get('body').trigger('keydown', { key: 'Escape' });
+    cy.get('[data-cy="spotlight"]').should('not.exist');
   });
 });
