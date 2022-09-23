@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "core-ui": "libs/core-ui",
+    "core-ui-e2e": "apps/core-ui-e2e",
     "program-view": "apps/program-view",
     "program-view-e2e": "apps/program-view-e2e",
     "program-view-lib-program-view": "libs/program-view/lib-program-view",
